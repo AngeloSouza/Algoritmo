@@ -1,0 +1,19 @@
+Algoritmo "aula7ex3"
+// Disciplina   : [Algoritmo]
+// Descrição   : identificar par ou impar
+// Autor(a)    : Angelo
+// Data atual  : 15/03/2017
+Var
+n,varpar,varim : inteiro
+
+Inicio
+escreva ("digite um numero: ")
+leia(n)
+se ((n%2)=0) entao
+varpar<-n
+senao
+varim<-n
+fimse
+escreval ("par: ",varpar)
+escreval ("impar: ",varim)
+Fimalgoritmo

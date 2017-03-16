@@ -1,0 +1,28 @@
+algoritmo "Calculadora"
+// Função : calculadora
+// Autor :  Angelo
+// Data : 09/03/2017
+
+var
+A,B,C : real
+X : caractere
+Y : Real
+inicio
+Escreva ("Escreva o primeiro numero: ")
+Leia (A)
+Escreva ("Qual operação ? ")
+Leia (X)
+Escreva ("Escreva o segundo numero:  ")
+Leia (B)
+escolha(X)
+caso "+"
+Y <- A + B
+caso "-"
+Y <- A - B
+caso "*"
+Y <- A * B
+caso "/"
+Y <- A / B
+fimescolha
+Escreva("O resultado é: ", Y)
+fimalgoritmo

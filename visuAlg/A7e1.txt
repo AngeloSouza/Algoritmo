@@ -1,0 +1,18 @@
+Algoritmo "Aula7ex1"
+
+Var
+ 
+x,a,b :real
+
+Inicio
+ 
+escreva ("digite um numero: ")
+leia (x)
+se (x >=0) entao
+a<-x
+senao
+b<-x
+fimse
+escreva ("o valor de A é: ",a," e o valor de B: ",b)
+
+Fimalgoritmo

@@ -1,0 +1,26 @@
+Algoritmo "aula7ex4"
+// Autor(a)    : Angelo
+// Data atual  : 15/03/2017
+Var
+h, x:real
+s:caractere
+
+Inicio
+ escreva("digite sua altura: ")
+ leia(h)
+ escreva("diga seu sexo(m/f): ")
+ leia(s)
+ se(s = "m") entao
+   x<-72.7 * (h)-58
+ senao
+  se (s= "f") entao
+    x<-62.1* (h)-44.7
+    senao
+    escreva("Sexo invalido")
+  fimse
+ fimse
+escreva("o seu peso ideal é: ", x)
+ 
+ 
+
+Fimalgoritmo
