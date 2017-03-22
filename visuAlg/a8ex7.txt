@@ -1,0 +1,24 @@
+algoritmo "a8ex7"
+// Função : verifica se o credito pode ser concedido
+// Autor : angelo
+// Data : 22/03/2017
+
+// Seção de Declarações 
+var
+sBr,vPr : real
+
+inicio
+// Seção de Comandos 
+
+escreva("informe o salario bruto: ")
+leia(sBR)
+escreva("informe o valor da prestaçao: ")
+leia(vPr)
+
+se (((sBr)*0.3) >= (vPr)) entao
+  escreva("imprestimo aprovado ")
+senao
+  escreva("imprestimo negado ")
+fimse
+
+fimalgoritmo

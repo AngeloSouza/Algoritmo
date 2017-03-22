@@ -1,0 +1,25 @@
+algoritmo "a8ex2"
+// Função :define se o numero digitado é positivo, negativo ou nulo
+// Autor : angelo
+// Data : 22/03/2017
+
+// Seção de Declarações 
+var
+num : inteiro
+
+inicio
+// Seção de Comandos 
+
+escreva("digite um numero: ")
+leia(num)
+se (num>0) entao
+ escreva("o numero digitado é positivo")
+senao
+ se (num<0) entao
+  escreva("o numero digitado é negativo")
+ senao
+  escreva("o numero digitado é nulo")
+ fimse
+fimse
+
+fimalgoritmo

@@ -1,0 +1,22 @@
+algoritmo "a8ex8"
+// Função : verifica se o valor esta na faixa definida
+// Autor : angelo
+// Data : 22/03/2017
+
+// Seção de Declarações 
+var
+num : inteiro
+
+inicio
+// Seção de Comandos 
+
+escreva("informe o valor: ")
+leia(num)
+
+se ( ((num)>20) e ((num)<90) ) entao
+  escreva("o valor esta definido na faixa ")
+senao
+  escreva("o valor nao esta definido na faixa ")
+fimse
+
+fimalgoritmo

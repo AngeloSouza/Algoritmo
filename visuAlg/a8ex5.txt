@@ -1,0 +1,25 @@
+algoritmo "a8ex5"
+// Função : recebe um numero e faz equaçoes diferentes se for positivo ou negativo
+// Autor : angelo
+// Data : 22/03/2017
+
+// Seção de Declarações 
+var
+num : inteiro
+res : real
+
+inicio
+// Seção de Comandos 
+
+escreva("informe o numero: ")
+leia(num)
+
+se (num >= 0) entao
+ res <- raizq(num)
+senao
+ res <- (num) * (num)
+fimse
+
+escreva("o resultado é: ",res)
+
+fimalgoritmo

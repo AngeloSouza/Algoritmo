@@ -1,0 +1,28 @@
+algoritmo "a8ex4"
+// Função : recebe dois numeros e faz equaçoes diferentes conforme o valor
+// Autor : angelo
+// Data : 22/03/2017
+
+// Seção de Declarações 
+var
+num1,num2,res,resF : inteiro
+
+inicio
+// Seção de Comandos 
+
+escreva("informe o primeiro numero: ")
+leia(num1)
+escreva("")
+escreva("informe o segundo numero: ")
+leia(num2)
+
+res <- (num1) + (num2)
+se (res > 20) entao
+ resF <- (res) + 10
+senao
+ resF <- (res) - 5
+fimse
+
+escreva("o resultado é: ",resF)
+
+fimalgoritmo

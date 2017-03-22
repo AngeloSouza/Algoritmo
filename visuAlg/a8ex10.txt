@@ -1,0 +1,44 @@
+algoritmo "a8ex10"
+// Função : verifica o imc e compara com a tabela
+// Autor : angelo
+// Data : 22/03/2017
+
+// Seção de Declarações 
+var
+
+peso,altura,imc : real
+sit : caractere
+
+inicio
+// Seção de Comandos 
+
+escreva("informe seu peso: ")
+leia(peso)
+escreva("informe sua altura: ")
+leia(altura)                   //altura medida em metros
+
+imc<-(peso)/((altura)^2)
+
+
+se (imc<20) entao
+ sit<-("abaixo do peso")
+senao
+ se ((imc>=20) e (imc<=25)) entao
+  sit<-("peso normal")
+ senao
+  se ((imc>25) e (imc<=30)) entao
+   sit<-("sobre peso")
+  senao
+   se ((imc>30) e (imc<=40)) entao
+    sit<-("obesidade")
+   senao
+    sit<-("obesidade morbita")
+   fimse
+  fimse
+ fimse
+fimse
+
+escreval("o seu imc é: ",imc," e esse imc na tabela consta como: ",sit)
+
+
+fimalgoritmo

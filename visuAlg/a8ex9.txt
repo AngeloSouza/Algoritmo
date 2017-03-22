@@ -1,0 +1,30 @@
+algoritmo "a8ex9"
+// Função : verifica o valor menor e o mairo, e em seguida calcula o quadrado e a raiz desses numeros(respectivamente)
+// Autor : angelo
+// Data : 22/03/2017
+
+// Seção de Declarações 
+var
+num1,num2 : inteiro
+res1,res2 : real
+
+inicio
+// Seção de Comandos 
+
+escreva("informe o primeiro valor: ")
+leia(num1)
+escreva("informe o segundo valor: ")
+leia(num2)
+
+se ((num1)>(num2) ) entao
+  res1<- (num2)^2
+  res2<- raizq(num1)
+senao
+  res1<- (num1)^2
+  res2<- raizq(num2)
+fimse
+
+escreval("o resultado do valor maior é: ",res2)
+escreval("o resultado do valor menor é: ",res1)
+
+fimalgoritmo

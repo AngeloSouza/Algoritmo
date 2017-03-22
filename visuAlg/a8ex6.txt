@@ -1,0 +1,24 @@
+algoritmo "a8ex6"
+// Função : verifica se a é divisovel por b
+// Autor : angelo
+// Data : 22/03/2017
+
+// Seção de Declarações 
+var
+num1,num2 : inteiro
+
+inicio
+// Seção de Comandos 
+
+escreva("informe o valor de a: ")
+leia(num1)
+escreva("informe o valor de b: ")
+leia(num2)
+
+se ((num1)%(num2) = 0) entao
+  escreva("a é divisivel por b ")
+senao
+  escreva("a nao é divisivel por b ")
+fimse
+
+fimalgoritmo

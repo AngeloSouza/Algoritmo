@@ -1,0 +1,21 @@
+algoritmo "a8ex3"
+// Função : verifica se o sexo informado é valido
+// Autor : angelo
+// Data : 22/03/2017
+
+// Seção de Declarações 
+var
+sex : caractere
+
+inicio
+// Seção de Comandos 
+
+escreva("informe o sexo(m/f): ")
+leia(sex)
+se ((sex="m") ou (sex="f")) entao
+ escreva("o sexo informado é valido")
+senao
+ escreva("o sexo informado é invalido")
+fimse
+
+fimalgoritmo
