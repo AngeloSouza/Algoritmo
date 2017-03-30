@@ -1,0 +1,33 @@
+algoritmo "a10ex3"
+// Função :
+// Autor : angelo
+// Data : 29/03/2017
+// Seção de Declarações
+var
+id :real
+
+inicio
+// Seção de Comandos
+
+escreva ("digite a idade do atleta: ")
+leia(id)
+
+se (id>=30) entao
+   escreva ("categoria senior ")
+senao
+   se ((id<30)e(id>=18))entao
+      escreva ("categoria profissional ")
+   senao
+      se ((id<18)e(id>=11))entao
+         escreva ("categoria juvenil ")
+      senao
+         se ((id<11)e(id>=5))entao
+            escreva ("categoria infantil ")
+         senao
+            escreva ("muito novo para o esporte")
+         fimse
+      fimse
+   fimse
+ fimse
+ 
+fimalgoritmo

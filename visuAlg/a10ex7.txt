@@ -1,0 +1,49 @@
+algoritmo "a10ex7"
+// Função :
+// Autor : angelo
+// Data : 29/03/2017
+// Seção de Declarações
+var
+n1,n2,n3 :real
+
+inicio
+// Seção de Comandos
+
+escreva ("digite o preço do primeiro produto: ")
+leia(n1)
+escreva ("digite o preço do segundo produto: ")
+leia(n2)
+escreva ("digite o preço do terceiro produto: ")
+leia(n3)
+
+se (n1<n2)entao
+   se (n1<n3)entao
+      se (n1=n3)entao
+         escreva ("o terceiro e primeiro produto tem o mesmo preço e sao mais baratos")
+      senao
+         escreva ("o primeiro produto é o mais barato")
+      fimse
+   senao
+      se (n1=n3)entao
+         escreva ("o terceiro e primeiro produto tem o mesmo preço e sao mais baratos")
+      senao
+         escreva ("o terceiro produto é o mais barato")
+      fimse
+   fimse
+senao
+    se (n2<n3)entao
+      se (n2=n3)entao
+         escreva ("o terceiro e segundo produto tem o mesmo preço e sao mais baratos")
+      senao
+         escreva ("o segundo produto é o mais barato")
+      fimse
+   senao
+      se (n2=n3)entao
+         escreva ("o terceiro e segundo produto tem o mesmo preço e sao mais baratos")
+      senao
+         escreva ("o terceiro produto é o mais barato")
+      fimse
+   fimse
+fimse
+
+fimalgoritmo

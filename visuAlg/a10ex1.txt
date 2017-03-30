@@ -1,0 +1,25 @@
+algoritmo "a10ex1"
+// Função :
+// Autor : angelo
+// Data : 29/03/2017
+// Seção de Declarações
+var
+temp :real
+
+inicio
+// Seção de Comandos
+
+escreva ("digite a temperatura da agua: ")
+leia(temp)
+
+se (temp<0) entao
+   escreva ("a agua esta em estado solido ")
+senao
+   se ((temp>0)e(temp<100))entao
+      escreva ("a agua esta em estado liquido ")
+   senao
+      escreva ("a agua esta em estado solido ")
+   fimse
+fimse
+
+fimalgoritmo
