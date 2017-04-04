@@ -1,0 +1,13 @@
+Algoritmo "a12ex6"
+
+Var
+i :inteiro
+hab :real
+Inicio
+hab<-20000
+Para i de 2011 ate 2030 faca
+   hab<-hab*1.05
+   Escreval("no ano de ",i," terá ",hab," habitantes na cidade" )
+Fimpara
+
+Fimalgoritmo

@@ -1,0 +1,45 @@
+Algoritmo "p1ex12 "
+
+Var
+nmes :inteiro
+mes : caractere
+Inicio
+
+Escreva("informe o numero do mês : ")
+Leia(nmes)
+
+Se((nmes>0)e(nmes<=12))entao
+   Escolha(nmes)
+   Caso 1
+      mes<-"janeiro"
+   Caso 2
+      mes<-"fevereiro"
+   Caso 3
+      mes<-"março"
+   Caso 4
+      mes<-"abril"
+   Caso 5
+      mes<-"maio"
+   Caso 6
+      mes<-"junho"
+   Caso 7
+      mes<-"julho"
+   Caso 8
+      mes<-"agosto"
+   Caso 9
+      mes<-"setembro
+   Caso 10
+      mes<-"outubro "
+   Caso 11
+      mes<-"novembro "
+   Caso 12
+      mes<-"dezembro "
+   Fimescolha
+   
+   Escreva (mes)
+   
+Senao
+   Escreva("erro de digitação ")
+fimse
+
+Fimalgoritmo

@@ -1,0 +1,17 @@
+Algoritmo "p1ex11"
+
+Var
+r,x :inteiro
+
+Inicio
+
+Repita
+   x<-x+1
+   Se (x%2=0) entao
+      r<-r+x
+   Fimse
+Ate(x=1000)
+
+Escreva(r)
+
+Fimalgoritmo

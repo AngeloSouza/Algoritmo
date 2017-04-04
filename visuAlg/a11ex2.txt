@@ -1,0 +1,28 @@
+Algoritmo "a11ex2"
+
+var
+x, numero :caractere
+
+Inicio
+
+Escreva(" informe o último numero da sua placa: ")
+Leia(numero)
+
+Escolha(numero)
+Caso "0","2"
+   x<-"não circula segunda-feira "
+Caso "3"
+   x<-"não circula terça-feira  "
+Caso "4"
+   x<-"não circula quarta-feira  "
+Caso "5"
+   x<-"não circula quinta-feira  "
+Caso "6"
+   x<-"não circula sexta-feira "
+Outrocaso
+   x<-"numero invalido"
+Fimescolha
+
+Escreva(x)
+
+Fimalgoritmo

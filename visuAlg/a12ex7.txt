@@ -1,0 +1,25 @@
+Algoritmo "a12ex7"
+
+Var
+rp,ap,i :inteiro
+x,p1,p2 :real
+
+Inicio
+
+Para i de 1 ate 20 faca
+   Escreva(" digite a nota da primeira prova do #",i,": ")
+   Leia(p1)
+   Escreva(" digite a nota da segunda prova do #",i,": ")
+   Leia(p2)
+   x<-(p1+p2)/2
+   Se (x>=6) entao
+      ap<-ap+1
+   Senao
+      rp<-rp+1
+   Fimse
+Fimpara
+
+Escreval("o numero de alunos aprovados é:  ",ap)
+Escreval ("o numero de alunos reprovados é: ",rp)
+
+Fimalgoritmo

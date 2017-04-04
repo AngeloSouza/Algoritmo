@@ -1,0 +1,33 @@
+Algoritmo " a10ex8 "
+
+
+
+Var  //declaração de variáveis
+salh, horas, salm, inss : real
+
+Inicio
+
+Escreva ("informe o seu salário por hora: ")
+Leia (salh)
+Escreva ("informe a quantidade de horas trabalhadas: ")
+Leia ( horas)
+
+salm<-(salh)*(horas)
+Se (salm<=1399.12) entao
+   inss<-(salm)*0.08
+Senao
+   Se ((salm>1399.12)e(salm<=2331.88)) entao
+      inss<-(salm)*0.09
+   Senao
+      Se ((salm>2331.88)e(salm<=4663.75)) entao
+         Inss<-(salm)*0.11
+      Senao
+         Escreva ("valor digitado não computado ")
+      Fimse
+   Fimse
+Fimse
+
+Escreva ("seu salário mensal é: ",salm)
+Escreva ("e a quantidade destinada para o inss: ",inss)
+
+Fimalgoritmo

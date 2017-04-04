@@ -1,0 +1,25 @@
+algoritmo "a11ex1"
+// Função :
+// Autor : profesor
+// Data : 03/04/2017
+// Seção de Declarações
+var
+x, estado :caractere
+Inicio
+Escreva(" informe seu estado civil(use apenas a primeira letra): ")
+Leia(estado)
+
+Escolha(estado)
+Caso "s"
+   x<-"solteiro "
+Caso "c"
+   x<-"casado "
+Caso "d"
+   x<-"divorciado "
+Caso "v"
+   x<-"viuvo "
+Fimescolha
+
+Escreva(x)
+
+Fimalgoritmo

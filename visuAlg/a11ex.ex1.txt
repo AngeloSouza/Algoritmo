@@ -1,0 +1,23 @@
+Algoritmo "a11ex.ex1"
+
+Var
+sal,salt :real
+dep :inteiro
+
+Inicio
+
+Escreva("informe o seu salário base: ")
+Leia(sal)
+Escreva("informe a quantidade de dependentes: ")
+Leia(dep)
+
+Escolha(dep)
+Caso 0
+   Salt<-sal
+Outrocaso
+   salt<-sal+(dep*80)
+Fimescolha
+
+Escreva(" seu salário fica no total: ",salt)
+
+Fimalgoritmo
