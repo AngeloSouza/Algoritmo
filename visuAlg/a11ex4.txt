@@ -1,0 +1,14 @@
+Algoritmo "a11ex4"
+
+Var
+num,i :inteiro
+
+Inicio
+
+Para i de 1 ate 15 faca
+   Escreva("digite um numero: ")
+   Leia(num)
+   Escreval(num-1," , ",num+1," , ",num*2," , ",num*3)
+Fimpara
+
+Fimalgoritmo

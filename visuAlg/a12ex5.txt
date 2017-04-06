@@ -1,15 +1,23 @@
-Algoritmo "a12ex5"
+algoritmo "a12ex5"
+// Função :
+// Autor :
+// Data : 05/04/2017
+// Seção de Declarações
+var
+num,i,i2 :inteiro
 
-Var
-i :inteiro
-num :real
+inicio
 
-Inicio
+Escreva ("Escreva um numero: ")
+Leia (num)
 
-Escreva(" digite o numero que você quer a tabuada: ")
-Leia(num)
-Para i de 1 ate 10 faca
-   Escreval(num," X ",i," = ",(num*i))
-Fimpara
+para i de 1 ate num faca
+   para i2 de 1 ate num faca
+      Escreva (" X ")
+   fimpara
+   Escreval ("")
+fimpara
 
-Fimalgoritmo
+
+
+fimalgoritmo

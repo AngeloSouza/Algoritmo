@@ -4,25 +4,27 @@ algoritmo "Calculadora"
 // Data : 09/03/2017
 
 var
-A,B,C : real
-X : caractere
-Y : Real
+n1,n2,res : real
+op,sn : caractere
+
+
 inicio
 Escreva ("Escreva o primeiro numero: ")
-Leia (A)
+Leia (n1)
 Escreva ("Qual operação ? ")
-Leia (X)
-Escreva ("Escreva o segundo numero:  ")
-Leia (B)
-escolha(X)
+Leia (op)
+Escreva ("Escreva o segundo numero:  ")
+Leia (n2)
+escolha(op)
 caso "+"
-Y <- A + B
+   res <- n1 + n2
 caso "-"
-Y <- A - B
+   res <- n1 - n2
 caso "*"
-Y <- A * B
+   res <- n1 * n2
 caso "/"
-Y <- A / B
+   res <- n1 / n2
 fimescolha
-Escreva("O resultado é: ", Y)
+
+Escreval("O resultado é: ", res)
 fimalgoritmo

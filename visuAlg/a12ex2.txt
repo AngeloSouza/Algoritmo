@@ -1,0 +1,20 @@
+algoritmo "a12ex2"
+// Função :
+// Autor :
+// Data : 05/04/2017
+// Seção de Declarações
+var
+num :inteiro
+inicio
+// Seção de Comandos
+
+escreva("informe um numero: ")
+leia (num)
+
+escreva (num,", ")
+enquanto (num<100) faca
+   num<-num*3
+   escreva (num,", ")
+fimenquanto
+
+fimalgoritmo

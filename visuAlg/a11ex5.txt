@@ -1,0 +1,15 @@
+Algoritmo "a11ex5"
+
+Var
+i :inteiro
+num :real
+
+Inicio
+
+Escreva(" digite o numero que você quer a tabuada: ")
+Leia(num)
+Para i de 1 ate 10 faca
+   Escreval(num," X ",i," = ",(num*i))
+Fimpara
+
+Fimalgoritmo

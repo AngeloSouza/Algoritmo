@@ -1,14 +1,38 @@
-Algoritmo "a12ex4"
+algoritmo "a12ex4"
+// Função :
+// Autor :
+// Data : 05/04/2017
+// Seção de Declarações
+var
+n1,n2,res : real
+op,sn : caractere
 
-Var
-num,i :inteiro
 
-Inicio
+inicio
+sn<-"s"
+enquanto (sn="s") faca
+   Escreva ("Escreva o primeiro numero: ")
+   Leia (n1)
+   Escreva ("Qual operação ? ")
+   Leia (op)
+   Escreva ("Escreva o segundo numero:  ")
+   Leia (n2)
+   escolha(op)
+   caso "+"
+      res <- n1 + n2
+   caso "-"
+      res <- n1 - n2
+   caso "*"
+      res <- n1 * n2
+   caso "/"
+      res <- n1 / n2
+   fimescolha
 
-Para i de 1 ate 15 faca
-   Escreva("digite um numero: ")
-   Leia(num)
-   Escreval(num-1," , ",num+1," , ",num*2," , ",num*3)
-Fimpara
+   Escreval("O resultado é: ", res)
+   Escreval()
+   Escreva("deseja fazer outro calculo? (s/n):")
+   leia(sn)
+   Escreval()
+fimenquanto
 
-Fimalgoritmo
+fimalgoritmo

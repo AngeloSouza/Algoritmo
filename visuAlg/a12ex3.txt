@@ -1,0 +1,25 @@
+algoritmo "a12ex3"
+// Função :
+// Autor :
+// Data : 05/04/2017
+// Seção de Declarações
+var
+pes,num :real
+np :inteiro
+
+inicio
+// Seção de Comandos
+
+
+enquanto ((np<15)e(pes<800))  faca
+   escreva ("qual o seu peso: ")
+   leia(num)
+   pes<-pes+num
+   np<-np+1
+fimenquanto
+
+escreval ("Elevador lotado!")
+escreval ("numero de pessoas: ",np)
+escreval ("peso total: ",pes)
+
+fimalgoritmo

@@ -1,0 +1,42 @@
+algoritmo "a12ex.ex1"
+// Função :
+// Autor :
+// Data : 05/04/2017
+// Seção de Declarações
+var
+n1,n2,media,maior :real
+ap,rp :inteiro
+i :caractere
+inicio
+i<-"1"
+enquanto (i<>"0")faca
+   escreva ("entre com a primeira nota do aluno: ")
+   leia(n1)
+   escreva ("entre com a segunda nota do aluno: ")
+   leia(n2)
+
+   media<-(n1+n2)/2
+
+   escreval("Media: ",media)
+
+   se media>6 entao
+      ap<-ap+1
+   senao
+      rp<-rp+1
+   fimse
+
+   se(media>maior)entao
+      maior<-media
+   fimse
+
+   escreva ("quer continuar? (1) ou aperte 0 para sair: ")
+   leia(i)
+
+   escreval(" ")
+
+fimenquanto
+
+escreval ("A maior media da turma foi: ",maior)
+escreval ("A turma teve",ap," aprovados e ",rp," reprovados.")
+escreval ("A a turma tem",ap+rp," alunos")
+fimalgoritmo

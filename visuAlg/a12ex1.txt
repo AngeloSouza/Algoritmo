@@ -1,0 +1,29 @@
+algoritmo "a12ex1"
+// Função :
+// Autor :
+// Data : 05/04/2017
+// Seção de Declarações 
+var
+i,num1,num2 :inteiro
+inicio
+// Seção de Comandos 
+
+escreva("informe um numero: ")
+leia (num1)
+escreva("informe mais um numero: ")
+leia (num2)
+
+se(num1>num2) entao
+   para i de num2 ate num1 faca
+       escreva ( num1-(i-2),". ")
+   fimpara
+
+senao
+     para i de num1 ate num2 faca
+       escreva ( num1+(i-2),". ")
+   fimpara
+
+fimse
+
+
+fimalgoritmo

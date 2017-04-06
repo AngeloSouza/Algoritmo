@@ -1,4 +1,4 @@
-Algoritmo "a12ex7"
+Algoritmo "a11ex7"
 
 Var
 rp,ap,i :inteiro

@@ -1,13 +1,24 @@
-Algoritmo "a12ex6"
+algoritmo "a12ex6"
+// Função :
+// Autor :
+// Data : 05/04/2017
+// Seção de Declarações
+var
+num,i,i2 :inteiro
 
-Var
-i :inteiro
-hab :real
-Inicio
-hab<-20000
-Para i de 2011 ate 2030 faca
-   hab<-hab*1.05
-   Escreval("no ano de ",i," terá ",hab," habitantes na cidade" )
-Fimpara
+inicio
 
-Fimalgoritmo
+Escreva ("Escreva um numero: ")
+Leia (num)
+
+para i de 1 ate num faca
+   para i2 de 1 ate num faca
+      Escreva (" X ")
+   fimpara
+   num<-num-1
+   Escreval ("")
+fimpara
+
+
+
+fimalgoritmo
