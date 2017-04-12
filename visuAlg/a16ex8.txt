@@ -1,0 +1,52 @@
+Algoritmo "a16ex08"
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Angelo
+// Data atual  : 12/04/2017
+Var
+   // Seção de Declarações das variáveis
+   i,a:inteiro
+   gab,resp:vetor [1..20] de inteiro
+   stat:vetor[1..20] de caractere
+   nota:real
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   para i de 1 ate 20 faca
+      escreva("informe o gabarito da questao ",i," : ")
+      leia(gab[i])
+   fimpara
+   
+   escreval("")
+   
+   para a de 1 ate 20 faca
+   
+      para i de 1 ate 20 faca
+         escreva("informe a resposta da questao ",i," do #",a," aluno : ")
+         leia(gab[i])
+      fimpara
+      
+      escreval("")
+      
+      para i de 1 ate 20 faca
+      
+         se(gab[i]=resp[i]) entao
+            nota<-nota + 0.5
+         fimse
+         
+      fimpara
+
+      se (nota>=6) entao
+         stat[a]<- "Aprovado"
+      senao
+         stat[a]<- "Reprovado"
+      fimse
+
+   fimpara
+
+   para i de 1 ate 20 faca
+      escreval("o aluno",i," foi ",stat[i])
+   fimpara
+
+
+
+Fimalgoritmo

@@ -1,0 +1,25 @@
+Algoritmo "a16ex04"
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Angelo
+// Data atual  : 12/04/2017
+Var
+   // Seção de Declarações das variáveis
+   i:inteiro
+   a,b,res:vetor [1..5] de real
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   para i de 1 ate 5 faca
+      escreva("informe o #",i," numero do vetor a: ")
+      leia(a[i])
+       escreva("informe o #",i," numero do vetor b: ")
+      leia(b[i])
+      res[i]<-a[i]+b[i]
+   fimpara
+
+   para i de 1 ate 5 faca
+        escreval("a resposta da #",i," soma é",res[i])
+   fimpara
+
+
+Fimalgoritmo

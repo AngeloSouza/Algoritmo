@@ -1,0 +1,35 @@
+Algoritmo "a16ex07"
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Angelo
+// Data atual  : 12/04/2017
+Var
+   // Seção de Declarações das variáveis
+   i,cod:inteiro
+   num:vetor [1..20] de real
+   flag:logico
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   para i de 1 ate 20 faca
+      escreva("informe numero de indice ",i," : ")
+      leia(num[i])
+   fimpara
+
+   repita
+      escreval("")
+      escreva("informe o indice desejado (1 ate 20): ")
+      leia(cod)
+      escreval("o numero do indice escolhido é",num[cod])
+      escreval(" ")
+      escreva("deseja procurar mais algum numero? 1.sim 2.nao ")
+      leia(cod)
+      se (cod=2) entao
+         flag<-verdadeiro
+      senao
+         flag<-falso
+      fimse
+
+   ate(flag=verdadeiro)
+
+
+Fimalgoritmo

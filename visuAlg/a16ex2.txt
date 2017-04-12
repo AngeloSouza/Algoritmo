@@ -1,0 +1,32 @@
+Algoritmo "a16ex02"
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Angelo
+// Data atual  : 12/04/2017
+Var
+   // Seção de Declarações das variáveis
+   i,ver,cont:inteiro
+   num:vetor [1..20] de inteiro
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   para i de 1 ate 20 faca
+      escreva("informe o #",i," numero: ")
+      leia(num[i])
+   fimpara
+   escreva("informe o numero que deseja verificar: ")
+   leia(ver)
+
+   para i de 1 ate 20 faca
+      se (num[i]=ver) entao
+         cont<-cont+1
+      fimse
+   fimpara
+
+   se (cont=0) entao
+      escreval ("esse numero nao esta armasenado")
+   senao
+      escreval("tem",cont," numeros",ver," no vetor")
+   fimse
+
+
+Fimalgoritmo
