@@ -1,0 +1,42 @@
+Algoritmo "a17ex01"
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Angelo
+// Data atual  : 12/04/2017
+Var
+   // Seção de Declarações das variáveis
+   i,cod:inteiro
+   sal:vetor [1..20] de inteiro
+   nome:vetor[1..20] de caractere
+   flag:logico
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   para i de 1 ate 20 faca
+      escreva("informe o nome do #",i," funcionario: ")
+      leia(nome[i])
+      escreva("informe o salario do #",i," funcionario: ")
+      leia(sal[i])
+      escreval("")
+   fimpara
+   
+   escreval("")
+   
+   repita
+      escreval("")
+      escreva("informe o indice desejado (1 ate 20): ")
+      leia(cod)
+      escreval("")
+      escreval("o funcionario do indice",cod," é ",nome[cod])
+      escreval("e ganha um salario de ",sal[cod])
+      escreval(" ")
+      escreva("deseja procurar mais alguem? 1.sim 2.nao ")
+      leia(cod)
+      se (cod=2) entao
+         flag<-verdadeiro
+      senao
+         flag<-falso
+      fimse
+
+   ate(flag=verdadeiro)
+
+Fimalgoritmo

@@ -1,0 +1,38 @@
+Algoritmo "a17ex02"
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Angelo
+// Data atual  : 12/04/2017
+Var
+   // Seção de Declarações das variáveis
+   i,mai,men,ig:inteiro
+   num:vetor [1..20] de inteiro
+
+   flag:logico
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   para i de 1 ate 20 faca
+      escreva("informe o #",i," numero: ")
+      leia(num[i])
+   fimpara
+
+   escreval("")
+
+   para i de 2 ate 20 faca
+      se (num[1]=num[i]) entao
+         ig<-ig+1
+      senao
+         se (num[1]<num[i]) entao
+            mai<-mai+1
+         senao
+            men<-men+1
+         fimse
+      fimse
+   fimpara
+
+   escreval("tem",ig," numeros iguais a ",num[1])
+   escreval("tem",mai," numeros maiores a ",num[1])
+   escreval("tem",men," numeros menores a ",num[1])
+
+
+Fimalgoritmo
