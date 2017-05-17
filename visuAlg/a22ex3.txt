@@ -1,0 +1,60 @@
+algoritmo "a22ex3"
+// Função :
+// Autor :
+// Data : 03/05/2017
+// Seção de Declarações
+var
+alt,res:real
+parametro,sn:caractere
+flag:logico
+
+funcao pesoid(x:real;pr:caractere):real
+var resposta:real
+inicio
+se (pr="m") entao
+   resposta<-72.7*x-58
+senao
+   resposta<-62.1*x-44.7
+fimse
+retorne resposta
+fimfuncao
+
+funcao fim(pr:caractere):logico
+var resposta:logico
+inicio
+se (pr="n") entao
+   resposta<-falso
+senao
+   resposta<-verdadeiro
+fimse
+retorne resposta
+fimfuncao
+
+procedimento menu()
+var
+inicio
+escreval("sistema de calculo de peso ideal")
+escreval("digite 'm' para fazer a conta para homens")
+escreval("digite 'f' para fazer a conta para mulheres")
+fimprocedimento
+
+
+inicio
+// Seção de Comandos
+repita
+   menu()
+   leia(parametro)
+   escreval("")
+   escreva("informe a sua altura :")
+   leia(alt)
+   escreval("")
+   res<- pesoid(alt,parametro)
+   escreval("seu peso ideal é",res)
+   escreval("")
+
+   escreva("Gostaria de continuar calculando? ")
+   leia(sn)
+   flag<-fim(sn)
+   limpatela
+ate(flag=falso)
+fimalgoritmo

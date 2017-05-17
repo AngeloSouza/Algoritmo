@@ -1,0 +1,90 @@
+algoritmo "a22ex5"
+// Função :
+// Autor :
+// Data : 03/05/2017
+// Seção de Declarações
+var
+planeta:inteiro
+g,peso,res:real
+sn:caractere
+flag:logico
+
+procedimento menu()
+var
+inicio
+escreval("sistema de calculo de peso em outro planeta")
+escreval("")
+escreval("1 - Mercurio gravidaderelativa 0,37 ")
+escreval("2 - Venus    gravidaderelativa 0,88 ")
+escreval("3 - Marte    gravidaderelativa 0,38 ")
+escreval("4 - Jupiter  gravidaderelativa 2,64 ")
+escreval("5 - Saturno  gravidaderelativa 1,15 ")
+escreval("6 - Urano    gravidaderelativa 1,17 ")
+escreval("")
+escreval("informe o planeta escolhido")
+fimprocedimento
+
+funcao fim(pr:caractere):logico
+var resposta:logico
+inicio
+se (pr="n") entao
+   resposta<-falso
+senao
+   resposta<-verdadeiro
+fimse
+retorne resposta
+fimfuncao
+
+
+
+funcao convercaoPeso(x,y:real):real
+var resposta:real
+inicio
+
+resposta<-(x/10)*y
+
+retorne resposta
+fimfuncao
+
+funcao planet(x:inteiro):real
+var resposta:real
+inicio
+
+escolha(x)
+caso 1
+   resposta<-0.37
+caso 2
+   resposta<-0.88
+caso 3
+   resposta<-0.38
+caso 4
+   resposta<-2.64
+caso 5
+   resposta<-1.15
+caso 6
+   resposta<-1.17
+fimescolha
+
+retorne resposta
+fimfuncao
+
+inicio
+// Seção de Comandos
+repita
+   menu()
+   leia(planeta)
+   escreval("")
+   escreva("informe o seu peso :")
+   leia(peso)
+   g<-planet(planeta)
+   escreval("")
+   res<-convercaoPeso(peso,g)
+   escreval("seu peso no planeta ",planeta," é de ",res)
+   escreval("")
+
+   escreva("Gostaria de continuar calculando? ")
+   leia(sn)
+   flag<-fim(sn)
+   limpatela
+ate(flag=falso)
+fimalgoritmo

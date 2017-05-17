@@ -1,0 +1,33 @@
+algoritmo "a18ex1"
+
+// Autor :
+// Data : 23/04/2017
+// Seção de Declarações
+var
+num:vetor[1..20,1..20]de inteiro
+resp:vetor[1..20]de inteiro
+n,i,j:inteiro
+
+inicio
+// Seção de Comandos
+para i de 1 ate 20 faca
+   para j de 1 ate 20 faca
+      escreva(" informe o #",j," da #",i," linha: ")
+      leia(num[i,j])
+   fimpara
+fimpara
+
+para i de 1 ate 20 faca
+   n<-0
+   para j de 1 ate 20 faca
+      n<-n+num[i,j]
+   fimpara
+      resp[i]<-n
+fimpara
+
+
+para i de 1 ate 20 faca
+      escreval ("soma da linha",i," é ",resp[i])
+fimpara
+
+fimalgoritmo

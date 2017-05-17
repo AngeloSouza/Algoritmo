@@ -1,0 +1,88 @@
+algoritmo "a19ex1"
+// Função :
+// Autor :
+// Data : 26/04/2017
+// Seção de Declarações
+var n1,n2,res:real
+z,sn:caractere
+flag:logico
+
+funcao soma(x,y: real):real
+var resp: real
+inicio
+resp<-x+y
+retorne resp
+fimfuncao
+
+funcao sub(x,y: real):real
+var resp: real
+inicio
+resp<-x-y
+retorne resp
+fimfuncao
+
+funcao mult(x,y: real):real
+var resp: real
+inicio
+resp<-x*y
+retorne resp
+fimfuncao
+
+funcao divi(x,y: real):real
+var resp: real
+inicio
+resp<-x/y
+retorne resp
+fimfuncao
+
+funcao repetir(f:caractere):logico
+var resp: logico
+inicio
+se(f="n") entao
+   resp<-verdadeiro
+senao
+   resp<-falso
+   limpatela
+fimse
+retorne resp
+fimfuncao
+
+funcao conta(x,y: real; f:caractere):real
+var resp: real
+inicio
+escolha(f)
+caso "+"
+   resp<-soma(x,y)
+caso "-"
+   resp<-sub(x,y)
+caso "*"
+   resp<-mult(x,y)
+caso "/"
+   resp<-divi(x,y)
+outrocaso
+   escreval(" operador invalido ")
+fimescolha
+retorne resp
+fimfuncao
+
+inicio
+// Seção de Comandos
+repita
+   flag<-falso
+   res<-0
+   escreva("informe o primeiro valor: ")
+   leia(n1)
+   escreva("informe a conta ")
+   leia(z)
+   escreva("informe o segundo valor: ")
+   leia(n2)
+   res<-conta(n1,n2,z)
+   escreval(res)
+   escreval("")
+   escreva("deseja fazer outra conta?(s/n) ")
+   leia(sn)
+   flag<-repetir(sn)
+   
+ate(flag=verdadeiro)
+
+fimalgoritmo

@@ -1,0 +1,20 @@
+algoritmo "a21ex5"
+// Função :
+// Autor :
+// Data : 26/04/2017
+// Seção de Declarações 
+var
+
+funcao dado():real
+var res:real
+inicio
+res<-randi(6)
+retorne res
+fimfuncao
+
+inicio
+// Seção de Comandos 
+
+escreva(dado())
+
+fimalgoritmo

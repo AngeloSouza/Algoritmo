@@ -1,0 +1,161 @@
+Algoritmo "a25ex0"
+// Autor(a)    : Angelo
+// Data atual  : 10/05/2017
+Var
+   // Seção de Declarações das variáveis
+   esc,j,res,num,n2:inteiro
+   n:vetor[1..5] de inteiro
+   flag:logico
+   sn:caractere
+
+procedimento menu ()
+var
+inicio
+   escreval ("tabela de funçoes")
+   escreval ("1-calcula o fatorial")
+   escreval ("2-calcule a formula de fibonaci")
+   escreval ("3-soma todas posiçoes do vetor")
+   escreval ("4-calcula o somatorio de 1 ate N")
+   escreval ("5-moasta os numeros de 0 ate N")
+   escreval ("6-calcula x na potencia de y*")
+   escreval ("")
+
+fimprocedimento
+
+procedimento verMenu ()
+var
+inicio
+   leia (esc)
+   escreval("")
+   entDados()
+
+   escolha (esc)
+   caso 1
+      res<-fat(num)
+   caso 2
+      res<-fibo(num)
+   caso 3
+      res<-somatorio(num)
+   caso 4
+      se(num>0 e num<6) entao
+         res<-somaVet(num)
+      senao
+         escreval("indice invalido")
+      fimse
+   caso 5
+      res<-cres(num)
+   caso 6
+      escreva ("informe a potencia*: ")
+      leia (n2)
+      poten(num,n2)
+   outrocaso
+      escreval("opçao invalida")
+   fimescolha
+fimprocedimento
+
+
+procedimento entDados ()
+var
+inicio
+   escreva ("informe um numero: ")
+   leia (num)
+   escreval("")
+
+fimprocedimento
+
+funcao fibo(x:inteiro):inteiro
+var
+inicio
+
+   se (x=0) entao
+      retorne 0
+   senao
+      se (x=1) entao
+         retorne 1
+      senao
+         se (x>1) entao
+            retorne fibo(x-1)+(x-2)
+         fimse
+      fimse
+   fimse
+
+fimfuncao
+
+funcao fat (x:inteiro) :inteiro
+var
+inicio
+   se (x=1) entao
+      retorne 1
+   senao
+      retorne x*fat(x-1)
+   fimse
+fimfuncao
+
+funcao somatorio (x:inteiro) :inteiro
+var i:inteiro
+inicio
+   se (x=1) entao
+      retorne 1
+   senao
+      retorne x+somatorio(x-1)
+   fimse
+
+fimfuncao
+
+funcao somaVet (x:inteiro) :inteiro
+var
+inicio
+   se (x=1) entao
+      retorne n[1]
+   senao
+      retorne n[1]+somaVet(x-1)
+   fimse
+fimfuncao
+
+funcao cres (x:inteiro) :inteiro
+var
+inicio
+   se (x=0) entao
+      retorne 0
+      escreva(x)
+   senao
+      retorne cres(x-1)
+      escreva(x)
+   fimse
+fimfuncao
+
+funcao poten (x,y:inteiro) :inteiro
+var
+inicio
+   se (y=1) entao
+      retorne x
+   senao
+      se (y>=2) entao
+         retorne x*poten(x,y-1)
+      fimse
+   fimse
+fimfuncao
+
+
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   repita
+      para j de 1 ate 5 faca
+         n[j]<-randi(9)
+      fimpara
+
+      menu()
+      verMenu()
+      se (esc=6) entao
+      senao
+         escreval (res)
+      fimse
+      escreval("")
+      escreval(" digite ' n ' para sair")
+      leia(sn)
+      se (sn="n") entao
+         flag<-falso
+      fimse
+   ate (flag=falso)
+Fimalgoritmo

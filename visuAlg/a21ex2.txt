@@ -1,0 +1,35 @@
+algoritmo "a21ex2"
+// Função :
+// Autor :
+// Data : 26/04/2017
+// Seção de Declarações
+var temp:real
+estado:caractere
+
+funcao verif_estado(x:real):caractere
+var resp: caractere
+inicio
+se(x<=0)entao
+   resp<-"solido"
+senao
+   se(x>0) e(x<=100)entao
+      resp<-"liquido"
+   senao
+      resp<-"gasoso"
+   fimse
+fimse
+retorne resp
+fimfuncao
+
+
+inicio
+// Seção de Comandos
+
+escreva("informe a temperatura: ")
+leia(temp)
+estado<-verif_estado(temp)
+limpatela
+escreval("")
+escreval("na temperatura",temp,"C° a agua esta no estado ",estado)
+
+fimalgoritmo

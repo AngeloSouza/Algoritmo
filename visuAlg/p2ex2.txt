@@ -1,0 +1,64 @@
+algoritmo "p2ex2"
+// Função :
+// Autor :
+// Data : 19/04/2017
+// Seção de Declarações
+var
+p,h,imc:real
+mag,sau,sob,obg,obs:inteiro
+sn:caractere
+flag:logico
+inicio
+// Seção de Comandos
+flag<-falso
+repita
+   escreva("informe sua altura(em m): ")
+   leia(h)
+   escreva("informe seu peso(em kg): ")
+   leia(p)
+   escreval("")
+
+   imc<-p/(h*h)
+
+   escreval("seu IMC é de:",imc)
+
+   se (imc<18.5) entao
+      escreval("classificado como magresa")
+      mag<-mag+1
+   senao
+      se ((imc>=18.5)e(imc<25)) entao
+         escreval("classificado como saudavel")
+         sau<-sau+1
+      senao
+         se ((imc>=25)e(imc<30)) entao
+            escreval("classificado como sobrepeso")
+            sob<-sob+1
+         senao
+            se ((imc>=30)e(imc<35)) entao
+               escreval("classificado como obesidade grau 1")
+               obg<-obg+1
+            senao
+               escreval("classificado como obesidade severa")
+               obs<-obs+1
+            fimse
+         fimse
+      fimse
+   fimse
+
+   escreval("")
+   escreva("deseja continuar ?(s/n) ")
+   leia(sn)
+   se (sn="n") entao
+      flag<-verdadeiro
+   fimse
+
+ate(flag=verdadeiro)
+
+escreval("")
+escreval(mag," pesoas classificadas em magresa")
+escreval(sau," pesoas classificadas em saudavel")
+escreval(sob," pesoas classificadas em sobrepeso")
+escreval(obg," pesoas classificadas em obesidade grau 1")
+escreval(obs," pesoas classificadas em obesidade severa")
+
+fimalgoritmo

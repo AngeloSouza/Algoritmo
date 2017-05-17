@@ -1,0 +1,70 @@
+algoritmo "a22ex4"
+// Função :
+// Autor :
+// Data : 03/05/2017
+// Seção de Declarações
+var
+x,y: vetor [1..2] de real
+i:inteiro
+res:real
+sn:caractere
+flag:logico
+
+funcao distancia(xx,xy,yx,yy:real):real
+var resposta:real
+inicio
+
+resposta<-(((xx-yx)*2)+((xy-yy)*2))
+se (resposta<0) entao
+ resposta<-raizq(resposta*-1)
+ escreval("Negativo")
+ senao
+  resposta<-raizq(resposta)
+  escreval("Positivo")
+fimse
+
+retorne resposta
+fimfuncao
+
+funcao fim(pr:caractere):logico
+var resposta:logico
+inicio
+se (pr="n") entao
+   resposta<-falso
+senao
+   resposta<-verdadeiro
+fimse
+retorne resposta
+fimfuncao
+
+procedimento menu()
+var
+inicio
+escreval("sistema de calculo de distancia")
+escreval("entre dois pontos.")
+fimprocedimento
+
+
+inicio
+// Seção de Comandos
+repita
+   menu()
+   escreval("")
+   para i de 1 ate 2 faca
+      escreva("informe a latitude :")
+      leia(x[i])
+      escreva("informe a longitude :")
+      leia(y[i])
+      escreval("")
+   fimpara
+   escreval("")
+   res<- distancia(x[1],y[1],x[2],y[2])
+   escreval("a distancia entre os pontos é",res)
+   escreval("")
+
+   escreva("Gostaria de continuar calculando? ")
+   leia(sn)
+   flag<-fim(sn)
+   limpatela
+ate(flag=falso)
+fimalgoritmo

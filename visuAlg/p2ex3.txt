@@ -1,0 +1,78 @@
+algoritmo "p2ex3"
+// Função :
+// Autor :
+// Data : 19/04/2017
+// Seção de Declarações
+var
+cand:vetor[1..4]de caractere
+c:vetor[1..4]de inteiro
+i,nc,v:inteiro
+flag,flag2:logico
+inicio
+// Seção de Comandos
+flag<-falso
+
+para i de 1 ate 4 faca
+   escreva("informe o nome do #",i," candidato: ")
+   leia(cand[i])
+fimpara
+
+repita
+
+   para i de 1 ate 4 faca
+      escreval(i," -",cand[i])
+   fimpara
+   escreval("escolha o numero do candidato que deseja votar(zero para fechar a urna): ")
+   repita
+      leia(nc)
+
+      escolha(nc)
+      caso 0
+         flag <- verdadeiro
+         flag2<-verdadeiro
+      caso 1
+         c[1]<-c[1]+1
+         flag2<-verdadeiro
+      caso 2
+         c[2]<-c[2]+1
+         flag2<-verdadeiro
+      caso 3
+         c[3]<-c[3]+1
+         flag2<-verdadeiro
+      caso 4
+         c[4]<-c[4]+1
+         flag2<-verdadeiro
+      outrocaso
+         Escreval("numero invalido porfavor escolha novamente")
+         flag2<-falso
+      fimescolha
+
+   ate(flag2=verdadeiro)
+
+   se(nc<>0)entao
+      Escreval("voce votou em ",cand[nc]," obrigado por sua participaçao!")
+      limpatela
+   fimse
+
+ate(flag=verdadeiro)
+
+se ((c[1]>c[2])e(c[1]>c[3])e(c[1]>c[4])) entao
+   v<-1
+senao
+   se ((c[2]>c[3])e(c[2]>c[4])) entao
+      v<-2
+   senao
+      se (c[3]>c[4]) entao
+         v<-3
+      senao
+         v<-4
+      fimse
+   fimse
+fimse
+
+Escreval("")
+Escreval("o candidato vencedor foi ",cand[v]," com",c[v]," votos!")
+
+
+
+fimalgoritmo

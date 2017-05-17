@@ -1,0 +1,64 @@
+algoritmo "a22ex2"
+// Função :
+// Autor :
+// Data : 03/05/2017
+// Seção de Declarações
+var
+not:vetor[1..3]de real
+i:inteiro
+res:real
+parametro,sn:caractere
+flag:logico
+
+funcao mediaAeP(x,y,z:real;pr:caractere):real
+var resposta:real
+inicio
+se (pr="a") entao
+   resposta<-(x+y+z)/3
+senao
+   resposta<-(1*x+2*y+3*z)/(1+2+3)
+fimse
+retorne resposta
+fimfuncao
+
+funcao fim(pr:caractere):logico
+var resposta:logico
+inicio
+se (pr="n") entao
+   resposta<-falso
+senao
+   resposta<-verdadeiro
+fimse
+retorne resposta
+fimfuncao
+
+procedimento menu()
+var
+inicio
+escreval("digite 'a' para fazer a media aritimetica")
+escreval("digite 'b' para fazer a media ponderada")
+fimprocedimento
+
+
+inicio
+// Seção de Comandos
+repita
+   menu()
+   leia(parametro)
+   escreval("")
+   para i de 1 ate 3 faca
+      escreva("informe a #",i," nota :")
+      leia(not[i])
+      escreval("")
+   fimpara
+
+   res<- mediaAeP(not[1],not[2],not[3],parametro)
+   escreval("a media é",res)
+   escreval("")
+
+   escreva("Gostaria de continuar calculando? ")
+   leia(sn)
+   flag<-fim(sn)
+   limpatela
+ate(flag=falso)
+fimalgoritmo

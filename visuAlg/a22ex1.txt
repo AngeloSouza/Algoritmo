@@ -1,0 +1,27 @@
+algoritmo "a22ex1"
+// Função :
+// Autor :
+// Data : 03/05/2017
+// Seção de Declarações 
+var
+    res,n1,n2:inteiro
+    
+funcao exercicio1(x,y:inteiro):inteiro
+var i,resposta:inteiro
+inicio
+     para i de x+1 ate y-1 faca
+     resposta<-resposta+i
+     fimpara
+     retorne resposta
+fimfuncao
+
+
+inicio
+// Seção de Comandos
+escreva("informe o primeiro numero :")
+leia(n1)
+escreva("informe o segundo numero :")
+leia(n2)
+res<- exercicio1(n1,n2)
+escreva(res)
+fimalgoritmo

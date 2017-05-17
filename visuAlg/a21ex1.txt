@@ -1,0 +1,39 @@
+algoritmo "a21ex1"
+// Função :
+// Autor :
+// Data : 26/04/2017
+// Seção de Declarações
+var num:inteiro
+flag:logico
+
+funcao verifica_polaridade(x:inteiro):logico
+var resp: logico
+inicio
+se(x%2=0)entao
+   resp<-verdadeiro
+senao
+   resp<-falso
+fimse
+retorne resp
+fimfuncao
+
+
+procedimento par_impar(x:logico)
+inicio
+se(x=verdadeiro) entao
+   escreval("o numero digitado é par")
+senao
+   escreval("o numero digitado é impar")
+fimse
+fimprocedimento
+
+inicio
+// Seção de Comandos
+
+escreva("informe o valor: ")
+leia(num)
+flag<-verifica_polaridade(num)
+escreval("")
+par_impar(flag)
+
+fimalgoritmo

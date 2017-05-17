@@ -1,0 +1,26 @@
+algoritmo "a21ex4"
+// Função :
+// Autor :
+// Data : 26/04/2017
+// Seção de Declarações
+var resposta,n1,n2,n3:real
+
+funcao delta(a,b,c:real):real
+var res:real
+inicio
+res<-b^2-4*a*c
+retorne res
+fimfuncao
+
+inicio
+// Seção de Comandos
+escreva("informe a : ")
+leia(n1)
+escreva("informe b : ")
+leia(n2)
+escreva("informe c : ")
+leia(n3)
+resposta<-delta(n1,n2,n3)
+escreva("a reposta é",resposta)
+
+fimalgoritmo

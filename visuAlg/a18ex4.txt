@@ -1,0 +1,35 @@
+algoritmo "a18ex4"
+
+// Autor :
+// Data : 23/04/2017
+// Seção de Declarações
+var
+atlet:vetor[1..5,1..10]de real
+maior:vetor[1..5]de real
+i,j:inteiro
+n:real
+inicio
+// Seção de Comandos
+para i de 1 ate 5 faca
+   para j de 1 ate 10 faca
+      escreva(" informe a altura do  #",j," atleta da #",i," delegaçao: ")
+      leia(atlet[i,j])
+   fimpara
+fimpara
+
+para i de 1 ate 5 faca
+   n<-0
+   para j de 1 ate 10 faca
+      se (atlet[i,j]>n) entao
+         n<-atlet[i,j]
+      fimse
+   fimpara
+   maior[i]<-n
+fimpara
+
+
+para i de 1 ate 5 faca
+   escreval ("o maior da #",i," delegaçao é ",maior[i])
+fimpara
+
+fimalgoritmo

@@ -1,0 +1,131 @@
+algoritmo "jogo da velha"
+// Função :
+// Autor :
+// Data : 18/04/2017
+// Seção de Declarações
+var
+jogo:vetor[1..3,1..3]de caractere
+val,op:caractere
+i,j,cont,c,l:inteiro
+flag1,flag2:logico
+fim:vetor[1..6,1..8]de inteiro
+inicio
+// Seção de Comandos
+fim[1,1]<-1
+fim[1,2]<-2
+fim[1,3]<-3
+fim[1,4]<-1
+fim[1,5]<-3
+fim[1,6]<-1
+fim[1,7]<-1
+fim[1,8]<-1
+
+fim[2,1]<-1
+fim[2,2]<-1
+fim[2,3]<-1
+fim[2,4]<-1
+fim[2,5]<-1
+fim[2,6]<-1
+fim[2,7]<-2
+fim[2,8]<-3
+
+fim[3,1]<-1
+fim[3,2]<-2
+fim[3,3]<-3
+fim[3,4]<-2
+fim[3,5]<-2
+fim[3,6]<-2
+fim[3,7]<-2
+fim[3,8]<-2
+
+fim[4,1]<-2
+fim[4,2]<-2
+fim[4,3]<-2
+fim[4,4]<-2
+fim[4,5]<-2
+fim[4,6]<-1
+fim[4,7]<-2
+fim[4,8]<-3
+
+fim[5,1]<-1
+fim[5,2]<-2
+fim[5,3]<-3
+fim[5,4]<-3
+fim[5,5]<-1
+fim[5,6]<-3
+fim[5,7]<-3
+fim[5,8]<-3
+
+fim[6,1]<-3
+fim[6,2]<-3
+fim[6,3]<-3
+fim[6,4]<-3
+fim[6,5]<-3
+fim[6,6]<-1
+fim[6,7]<-2
+fim[6,8]<-3
+
+
+repita
+op<-" X "
+   para i de 1 ate 3 faca
+      para j de 1 ate 3 faca
+         jogo[i,j]<-" - "
+         escreva(jogo[i,j])
+      fimpara
+      escreval("")
+   fimpara
+   repita
+      repita
+         escreval("jogador ",op)
+         leia(c,l)
+         se(jogo[c,l]<>" - ")entao
+            flag1<-falso
+            escreva(" posiçao invalida ")
+            escreval("")
+         senao
+            flag1<-verdadeiro
+            jogo[c,l]<-op
+         fimse
+      ate(flag1=verdadeiro)
+      para i de 1 ate 3 faca
+         para j de 1 ate 3 faca
+            escreva(jogo[i,j])
+         fimpara
+         escreval("")
+      fimpara
+      para i de 1 ate 8 faca
+         se(((jogo[fim[1,i],fim[2,i]])=op)e((jogo[fim[3,i],fim[4,i]])=op)e((jogo[fim[5,i],fim[6,i]])=op))entao
+            escreval("Jogador ",op," ganhou! ")
+            flag2<-verdadeiro
+         fimse
+      fimpara
+      se(op=" X ")entao
+         op<-" O "
+      senao
+         op<-" X "
+      fimse
+      cont<-0
+      para i de 1 ate 3 faca
+         para j de 1 ate 3 faca
+            se(jogo[i,j]=" - ")entao
+               cont<-cont+1
+            fimse
+         fimpara
+      fimpara
+      se(cont=0)entao
+         escreva("Empate")
+         flag2<-verdadeiro
+      fimse
+
+   ate(flag2=verdadeiro)
+
+   escreva("deseja jogar novamente?(s/n)")
+   leia(val)
+   
+   limpatela
+   
+ate(val="n")
+
+
+fimalgoritmo
